@@ -1,0 +1,54 @@
+
+body{
+    background-color: gray;
+    font-family: 'Asap', sans-serif;
+}
+
+header{
+    background-color: white;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgb(0, 0, 0);
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+}
+
+h1{
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+
+.logo{
+    margin-left:2%;
+    height: 10vh;
+    width: auto;
+}
+
+.bot{
+    background-color: #4262FF;
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#exp{
+    display: flex;
+    list-style-type: none;
+}
+
+#data-div{
+    list-style-type: none;
+    display: flex;
+    background-color: white;
+    color:  black;
+}
+
