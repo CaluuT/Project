@@ -44,6 +44,10 @@ footer{
     margin-left:2%;
 }
 
+nav{
+    width: 100%;
+}
+
 #paginas{
     display: flex;
 	float: right;
@@ -65,6 +69,10 @@ footer{
 
 #paginas li a:hover{
     color: white;
+}
+
+.menu{
+    display: none;
 }
 
 
@@ -145,10 +153,16 @@ footer{
 footer{
     width: 100%;
     height: 20vh;
-    font-size: 1vh;
+    font-size: 1.2vh;
     color: black;
     background-color: #e37e1e;
     text-align: center;
+}
+
+#datos{
+    display: flex;
+   
+  justify-content: center;
 }
 
 .copyright{
@@ -176,8 +190,7 @@ footer{
 
 
 
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
 
 
 
@@ -191,59 +204,49 @@ footer{
     }
 
 
-    nav{
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .bar-btn{
-        font-size: 2.5vh;
+    footer{
+        width: 100%;
+        height: 20vh;
+        font-size: 1.1vh;
         color: black;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-
-    .nav-menu{
-        position:fixed;
-        width: 100%;
-        height: 100vh;
-        top: 100px;
-        background: rgba(255, 255, 255, 0.226);
+        background-color: #e37e1e;
         text-align: center;
-        transition: all .5s;
     }
 
-    .nav-menu li{
-        display: block;
-        line-height: 30px;
-        margin: 50px 0;
-        transition: all .5s;
+    
+
+    .menu{
+        display: flex;
     }
 
-    .nav-menu li a{
-        color: black;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    .nav-menu li a.active, .nav-menu li a:hover{
-        color:white;
-        transition: .3s;
-    }
-
-    #check{
+    .nav ul{
         display: none;
     }
+    
 
-    #check:checked ~ .nav-menu{
-        height: 100vh;
-    }
 
-    #check:checked ~ .nav-menu li{
+    .nav ul.show {
         display: block;
-    }
+        margin: 0;
+        padding: 0;
+    
+        color: rgb(255, 255, 255);
+    
+        height: 37vh;
+        animation-name: slide;
+        animation-duration: 0.5s;
+      }
+
+      @keyframes slide {
+        /**/
+        from {
+          height: 0px;
+        }
+        to {
+          height: var(--nav-hg-altura);
+        }
+      }
+
+   
 }
