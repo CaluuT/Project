@@ -10,8 +10,8 @@
 
     <title>Museo</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="turnos.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       
         <div id="encabezado">
             <a href="index.html"> 
-              <img class="museo"  src="img/logomuseo.svg" alt="MUSEO">
+              <img class="museo"  src="../img/logomuseo.svg" alt="MUSEO">
             </a>
             <ul id="paginas">
               <li><a href="index.html">Inicio</a></li>
@@ -36,39 +36,56 @@
     </header>
                     
     <main>
-      <div id="cuerpo">
-        <div class="data">
-          <ul id="data-div">
-            <li class="horarios">
-              <h1>Horarios</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod odit iure, labore accusamus nam sed sunt aut perferendis veniam obcaecati, atque mollitia repellendus voluptas! Ullam sed delectus commodi nihil!</p>
-            </li>
-            <li class="informacion">
-              <h1>Un Poco de Historia</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic expedita sunt perspiciatis tempora vero explicabo? Reiciendis et rem dolore necessitatibus tempora laudantium accusamus facilis dolores, unde ipsam? Ratione, error quo.</p>
-            </li>
-          </ul>
+
+      <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
         </div>
-        <div id="exposicion">
-          <h1 class="titulo">EXHIBICIÓN</h1>
-          <ul id="exp">
-            <li class="exp-1">
-              <img src="https://w7.pngwing.com/pngs/388/487/png-transparent-computer-icons-graphy-img-landscape-graphy-icon-miscellaneous-angle-text.png"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam consequatur ad fuga eum dicta, perferendis necessitatibus atque, iste similique est dolores enim inventore esse odit debitis reiciendis ratione et!</p>
-            </li>
-            <li class="exp-2">
-              <img src="https://w7.pngwing.com/pngs/388/487/png-transparent-computer-icons-graphy-img-landscape-graphy-icon-miscellaneous-angle-text.png"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam consequatur ad fuga eum dicta, perferendis necessitatibus atque, iste similique est dolores enim inventore esse odit debitis reiciendis ratione et!</p>
-            </li>
-            <li class="exp-3">
-              <img src="https://w7.pngwing.com/pngs/388/487/png-transparent-computer-icons-graphy-img-landscape-graphy-icon-miscellaneous-angle-text.png"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam consequatur ad fuga eum dicta, perferendis necessitatibus atque, iste similique est dolores enim inventore esse odit debitis reiciendis ratione et!</p>
-            </li>
-          </ul>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="E-mail" required>
         </div>
-        <div id="inscripcion">
-          <div class="boton">
-            <a href="#" class="bot">Visita guiada</a>
-          </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
         </div>
-      </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="0" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Room Preference</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Choose a Room from the List</option>
+              <option value="connecting">Connecting</option>
+              <option value="adjoining">Adjoining</option>
+              <option value="adjacent">Adjacent</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit">Book The Rooms</button>
+      </form>
+
+
+
     </main>
       <br>
     <footer>

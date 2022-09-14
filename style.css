@@ -54,7 +54,7 @@ footer{
 
 #paginas li{
     white-space: nowrap;
-    font-size: 1.35vw;
+    font-size: 2vh;
     padding-left: 5%;
 }
 
@@ -68,9 +68,62 @@ footer{
 }
 
 
+
+
+#data-div{
+    
+    list-style-type: none;
+    display: flex;
+    background-color: #e37e1e;
+    color:  white;
+    margin: 0px;
+    text-align: center;
+}
+
+
+.horarios{
+    width: 20%;
+    padding-right: 25px;
+}
+
+.informacion{
+    width: 80%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+
+#exp{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+
+    margin: 100px;
+    
+}
+
+
 #exp p{
     margin: 10px;
 }
+
+
+#exp li{
+    margin: 40px 10px 40px 10px;
+    
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#exp li img{
+    width: 100%;
+    height: auto;
+}
+
+
 
 .boton{
     text-align: center;
@@ -88,46 +141,75 @@ footer{
     text-decoration: none;
 }
 
-.horarios{
-    width: 20%;
-    padding-right: 25px;
-}
 
-.informacion{
-    width: 80%;
-}
 
-.titulo{
-    text-align: center;
-}
+@media only screen and (max-width: 500px){
 
-#exp{
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
 
-    margin: 100px;
+
+    #exp{
+        display: block;
+        list-style-type: none;
+        padding: 0px;
     
-}
+        margin: 20px;
+        
+    }
 
-#exp li{
-    margin: 40px 10px 40px 10px;
-    
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
 
-#exp li img{
-    width: 100%;
-    height: auto;
-}
+    nav{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-#data-div{
-    
-    list-style-type: none;
-    display: flex;
-    background-color: #e37e1e;
-    color:  white;
-    margin: 0px;
-    text-align: center;
+    .bar-btn{
+        font-size: 2.5vh;
+        color: black;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        background: rgba(255, 255, 255, 0.226);
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-menu li{
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+
+    .nav-menu li a{
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .nav-menu li a.active, .nav-menu li a:hover{
+        color:white;
+        transition: .3s;
+    }
+
+    #check{
+        display: none;
+    }
+
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+
+    #check:checked ~ .nav-menu li{
+        display: block;
+    }
 }
