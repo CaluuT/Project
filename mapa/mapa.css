@@ -13,7 +13,7 @@ footer{
 }
 
 .fondo{
-    background-image: url("img/banner.jpg");
+    background-image: url("../img/banner.jpg");
     padding-bottom: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,5 +129,30 @@ footer{
     background-color: #e37e1e;
     color:  white;
     margin: 0px;
+    text-align: center;
+}
+
+.rym{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 100px;
+}
+
+.rym li{
+    margin: 20px 10px 20px 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.rym li img{
+    width: 100%;
+    height: 60vh;
+}
+
+.rym p{
+    margin: 10px;
+}
+
+.titulo{
     text-align: center;
 }
