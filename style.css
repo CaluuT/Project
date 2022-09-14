@@ -9,7 +9,10 @@ body{
 
 footer{
     font-size: 10px;
-    color: black
+    color: black;
+    background-color: #e37e1e;
+    width: 100%;
+    height: 20vh;
 }
 
 .fondo{
@@ -135,7 +138,7 @@ nav{
 
 .boton{
     text-align: center;
-    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .bot{
@@ -150,7 +153,53 @@ nav{
 }
 
 
+<<<<<<< HEAD
 footer{
+=======
+.informacion{
+    width: 80%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.copyright{
+    color:white;
+}
+
+.uldata{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.uldata a{
+    text-decoration: none;
+    color: white;
+}
+
+.uldata h2{
+    color: black;
+}
+
+#exp{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 100px;    
+}
+
+#exp li{
+    margin: 40px 10px 40px 10px;
+    
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#exp li img{
+>>>>>>> main
     width: 100%;
     height: 20vh;
     font-size: 1.2vh;
