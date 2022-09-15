@@ -1,18 +1,29 @@
-/* #36393c #e37e1e #eaa928 #f0c82f #ffffff */
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 body{
     background-color: rgb(233, 233, 233);
     font-family: 'Asap', sans-serif;
 }
 
-footer{
-    width: 100%;
-    height: 20%;
-    font-size: 1.2vh;
-    color: black;
-    background-color: rgb(255, 78, 78);
-    text-align: center;
-}
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 .fondo{
     background-image: url("img/banner.jpg");
@@ -20,10 +31,9 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: 0 0;
+    background-position: 50% 0;
     height: 50%;
 }
-
 
 #encabezado{
     background-color: white;
@@ -39,14 +49,11 @@ footer{
     height: auto;
 }
 
-
 .museo{
     height: 15vh;
 	width: auto;
     margin-left:2%;
 }
-
-
 
 nav{
     width: 100%;
@@ -79,6 +86,16 @@ nav{
     display: none;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
 #data-div{
     
     list-style-type: none;
@@ -88,7 +105,6 @@ nav{
     margin: 0px;
     text-align: center;
 }
-
 
 .horarios{
     width: 30%;
@@ -153,6 +169,25 @@ nav{
     text-decoration: none;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer{
+    width: 100%;
+    height: 20%;
+    font-size: 1.2vh;
+    color: black;
+    background-color: rgb(255, 78, 78);
+    text-align: center;
+}
+
 #datos{
     display: flex;
    
@@ -182,6 +217,15 @@ nav{
     color: black;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 @media only screen and (max-width: 1100px){
     

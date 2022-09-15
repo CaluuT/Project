@@ -2,35 +2,40 @@
 <html lang="es"> 
 
   <head>
+    <!---  Metadatos  -->
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Pagina de museo">
     <meta name="keywords" content="Museo, Olimpiadas de programacion 2022">
     <meta name="author" content="Fidel Barreiros, Luca Testa">
-
     <title>Museo</title>
 
+    <!---  Importar archivos  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+
+    <!--- Importar fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
 
-  
+    <!---Importar Javascript-->
     <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src ="menu.js"></script>
   </head>
-  <body>
-    <header>
+
+  <body> <!---Cuerpo de la página-->
+
+    <header> <!---Encabezado-->
+      <!---Imagen de fondo + logo-->
       <div class="fondo">
-      
         <div id="encabezado">
             <a href="index.html"> 
               <img class="museo"  src="img/logomuseo.svg" alt="MUSEO">
             </a>
+          <!---Menu-->
           <div class="opciones"></div>
             <a class="menu"> ●●● </a> 
-            
             <nav class="nav"> 
               <ul id="paginas">
                 <li><a href="index.html">Inicio</a></li>
@@ -39,82 +44,73 @@
               </ul>
             </nav>
           </div>
-
-    
         </div>
       </div>
-
     </header>
                     
-    <main>
-      <div id="cuerpo">
-        <div class="data">
-          <ul id="data-div">
-            <li class="horarios">
-              <h1>Horarios</h1>
-              <p>De Lunes a Viernes de 9AM a 11PM.</p>
-              <p>Sabados y Domingos de 11AM a 9PM.</p>
-            </li>
-            <li class="informacion">
-              <h1>Un Poco de Historia</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste officiis, repellendus a itaque, consectetur nulla quis expedita iure ipsam, tempore quos! Quisquam officiis reiciendis eius, ratione omnis eligendi et earum?</p>
-            </li>
-          </ul>
-        </div>
-        <div id="exposicion">
-          <h1 class="titulo">EXHIBICIÓN</h1>
-          <ul id="exp">
-            <li class="exp-1">
-              <img src="img/arts.jpg"><p>Arte</p>
-            </li>
-            <li class="exp-2">
-              <img src="img/dino.jpg"><p>Arqueologia</p>
-            </li>
-            <li class="exp-3">
-              <img src="img/historia.jpg"><p>Historia</p>
-            </li>
-          </ul>
-        </div>
-        <div id="inscripcion">
-          <div class="boton">
-            <a href="turnos/turnos.html" class="bot">Visita guiada</a>
-          </div>
+    <main> <!---Sección principal-->
+      <!---Informacion-->
+      <div class="data">
+        <ul id="data-div">
+          <li class="horarios">
+            <h1>Horarios</h1>
+            <p>De Lunes a Viernes de 9AM a 11PM.</p>
+            <p>Sabados y Domingos de 11AM a 9PM.</p>
+          </li>
+          <li class="informacion">
+            <h1>Un Poco de Historia</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste officiis, repellendus a itaque, consectetur nulla quis expedita iure ipsam, tempore quos! Quisquam officiis reiciendis eius, ratione omnis eligendi et earum?</p>
+          </li>
+        </ul>
+      </div>
+      <!---Exposiciones-->
+      <div id="exposicion">
+        <h1 class="titulo">EXHIBICIÓN</h1>
+        <ul id="exp">
+          <li class="exp-1">
+            <img src="img/arts.jpg"><p>Arte</p>
+          </li>
+          <li class="exp-2">
+            <img src="img/dino.jpg"><p>Arqueologia</p>
+          </li>
+          <li class="exp-3">
+            <img src="img/historia.jpg"><p>Historia</p>
+          </li>
+        </ul>
+      </div>
+      <div id="inscripcion"> <!---Boton para sacar turno-->
+        <div class="boton">
+          <a href="turnos/turnos.html" class="bot">Visita guiada</a>
         </div>
       </div>
     </main>
-      <br>
 
-
-
-      <footer>
-        <div id="datos">
-          <ul class="uldata">
-            <li class="ubicacion">
-              <h2>Visitá el Bellas Artes</h2>
-              <p>Av. Del Libertador 1473</p>
-              <p>Ciudad Autónoma de Buenos Aires
-                Argentina</p>
-              <p>+54 (011) 5288-9900</p>
-              <p>info@mnba.gob.ar</p>    
-            </li>
-          </ul>
-          <ul class="uldata">
-            <li class="redes">  
-              <h2>Seguinos en Nuestras Redes!</h2>          
-              <p href="#">Facebook</p>
+    <footer> <!---Pie de página-->
+      <div id="datos">
+        <!---Ubicacion-->
+        <ul class="uldata">
+          <li class="ubicacion">
+            <h2>Visitanos</h2>
+            <p>Sgto. Cabral 2772</p>
+            <p>provincia de Buenos Aires, Argentina</p>
+            <p>+54 (011) 1234-5678</p>
+            <p>example@gmail.gob.ar</p>    
+          </li>
+        </ul>
+        <!---Redes-->
+        <ul class="uldata">
+          <li class="redes">  
+            <h2>Seguinos en Nuestras Redes!</h2>          
+            <p href="#">Facebook</p>
               
-              <p href="#">Instagram</p>
+            <p href="#">Instagram</p>
               
-              <p href="#">Pinterest</p>
-            </li>
-
-          </ul>
-        </div>
-        <small class="copyright">Desarrollada por Luca Testa, Fidel Barreiros y Manuel Martinez. ©</small>
-      </footer>
-  
-  
-  
-  
+            <p href="#">Pinterest</p>
+           </li>
+        </ul>
+      </div>
+      <!---Copyright-->
+      <small class="copyright">Desarrollada por Luca Testa, Fidel Barreiros y Manuel Martinez. ©</small>
+    </footer>
   </body> 
 </html>

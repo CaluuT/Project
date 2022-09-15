@@ -1,18 +1,29 @@
-/* #36393c #e37e1e #eaa928 #f0c82f #ffffff */
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 body{
     background-color: rgb(233, 233, 233);
     font-family: 'Asap', sans-serif;
 }
 
-footer{
-    width: 100%;
-    height: 20vh;
-    font-size: 1.2vh;
-    color: black;
-    background-color: rgb(255, 78, 78);
-    text-align: center;
-  }
+
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 .fondo{
     background-image: url("../img/banner.jpg");
@@ -20,7 +31,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: 0 0;
+    background-position: 50% 0;
     height: 50%;
 }
 
@@ -46,118 +57,91 @@ footer{
     margin-left:2%;
 }
 
-#paginas{
+nav{
+    width: 100%;
+}
+
+.nav ul{
     display: flex;
 	float: right;
     margin-top: 2.5vh;
-    margin-right:5%;
+    margin-right:10vh;
     list-style-type: none;
 }
 
-#paginas li{
+.nav ul li{
     white-space: nowrap;
-    font-size: 1.35vw;
+    font-size: 2vh;
     padding-left: 5%;
 }
 
-#paginas li a{
+.nav ul li a{
     text-decoration: none;
     color: black;
 }
 
-#paginas li a:hover{
+.nav ul li a:hover{
     color: white;
 }
 
-
-#exp p{
-    margin: 10px;
+.menu{
+    display: none;
 }
 
-.boton{
-    text-align: center;
-    margin-top: 5%;
-}
-
-.bot{
-    background-color: #36393c;
-    color: white;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.horarios{
-    width: 20%;
-    padding-right: 25px;
-}
-
-.informacion{
-    width: 80%;
-}
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 .titulo{
     text-align: center;
+    text-decoration: underline;
 }
 
-#exp{
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
-
-    margin: 100px;
-    
-}
-
-#exp li{
-    margin: 40px 10px 40px 10px;
-    
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-#exp li img{
-    width: 100%;
-    height: auto;
-}
-
-#data-div{
-    
-    list-style-type: none;
-    display: flex;
-    background-color: #e37e1e;
-    color:  white;
-    margin: 0px;
-    text-align: center;
-}
-
-.rym{
+#planos{
     display: flex;
     list-style-type: none;
     padding: 0px;
     margin: 100px;
 }
 
-.rym li{
+#planos li{
     margin: 20px 10px 20px 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.rym li img{
+#planos li img{
     width: 100%;
-    height: 60vh;
+    height: auto;
 }
 
-.rym p{
+#planos p{
     margin: 10px;
 }
 
-.titulo{
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer{
+    width: 100%;
+    height: 20vh;
+    font-size: 1.2vh;
+    color: black;
+    background-color: rgb(255, 78, 78);
     text-align: center;
-}
+  }
 
 #datos{
     display: flex;
@@ -187,3 +171,101 @@ footer{
   .uldata h2{
     color: black;
   }
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+  @media only screen and (max-width: 1000px){
+
+    #planos{
+        margin: 0;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){
+
+    #planos{
+        display: block;
+        list-style-type: none;
+        padding: 0px;
+    
+        margin: 20px;
+        
+    }
+
+    footer{
+        width: 100%;
+        height: 20vh;
+        font-size: 1.1vh;
+        color: black;
+        background-color: #e37e1e;
+        text-align: center;
+    }
+
+    
+    
+    #encabezado{
+        display: block;
+    }
+
+    .menu{
+        top: 6vh;
+        display: flex;
+        margin-left: 85%;
+        margin-right:5%;
+        list-style-type: none;
+        position: absolute;
+    }
+
+    .nav ul{
+        display: none;
+    }
+    
+    .nav ul li{
+       padding-top: 1vh;
+       padding-bottom: 1vh; 
+    }
+
+    .nav ul li a{
+        font-weight: 500;
+        color:rgb(0, 0, 0);
+        
+     }
+
+    .nav ul.show {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
+        padding-left: 5%;
+        padding-right: 5%;
+
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.416);
+        height: 37vh;
+        animation-name: slide;
+        animation-duration: 0.5s;
+      }
+
+      @keyframes slide {
+        /**/
+        from {
+          height: 0px;
+        }
+        to {
+          height: 37vh;
+        }
+      }
+    }

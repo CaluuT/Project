@@ -1,20 +1,29 @@
-/* #36393c #e37e1e #eaa928 #f0c82f #ffffff */
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 body{
     background-color: rgb(233, 233, 233);
     font-family: 'Asap', sans-serif;
 }
 
-
-
-footer{
-  width: 100%;
-  height: 20vh;
-  font-size: 1.2vh;
-  color: black;
-  background-color: rgb(255, 78, 78);
-  text-align: center;
-}
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 .fondo{
     background-image: url("../img/banner.jpg");
@@ -22,7 +31,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: 0 0;
+    background-position: 50% 0;
     height: 50%;
 }
 
@@ -40,11 +49,17 @@ footer{
     height: auto;
 }
 
-.museo{
+.museo{ /*LOGO*/
     height: 15vh;
 	width: auto;
     margin-left:2%;
 }
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL MENU
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 nav{
   width: 100%;
@@ -77,6 +92,20 @@ float: right;
   display: none;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+main{
+    width: 100%;
+}
+
 #fyr{
   display: flex;
   padding: 5vh;
@@ -99,6 +128,7 @@ float: right;
 }
 
 .linea{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
   height: 100%;
   width: 22vh;
   position:absolute;
@@ -128,10 +158,89 @@ b{
   color: black;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL FORMULARIO DE INSCRIPCION
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 75%;
+  display: inline-block;
+  
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background-color: #e37e1e;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer{
+  width: 100%;
+  height: 20vh;
+  font-size: 1.2vh;
+  color: black;
+  background-color: rgb(255, 78, 78);
+  text-align: center;
+}
+
 #datos{
   display: flex;
- 
-justify-content: center;
+  justify-content: center;
 }
 
 .copyright{
@@ -143,23 +252,18 @@ justify-content: center;
   list-style-type: none;
   text-align: center;
   color: white;
-  
 }
 
 .uldata a{
-  
   text-decoration: none;
   color: white;
-  
 }
 
 .uldata h2{
   color: black;
 }
 
-main{
-    width: 100%;
-}
+
 
 
   div.elem-group {
@@ -215,6 +319,16 @@ main{
   button:hover {
     border: 2px solid black;
   }
+  
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
   @media only screen and (max-width: 600px){
 
@@ -298,3 +412,4 @@ main{
           height: 37vh;
         }
       }
+    }
