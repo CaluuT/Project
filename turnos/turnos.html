@@ -21,69 +21,62 @@
       <div class="fondo">
       
         <div id="encabezado">
-            <a href="index.html"> 
+            <a href="../index.html"> 
               <img class="museo"  src="../img/logomuseo.svg" alt="MUSEO">
             </a>
             <ul id="paginas">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="turnos/turnos.html">Turnos</a></li>
-              <li><a href="mapa/mapa.html">Mapa</a></li>
-              <li><a href="login/login.html">Iniciar sesion</a></li>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../turnos/turnos.html">Turnos</a></li>
+              <li><a href="../mapa/mapa.html">Mapa</a></li>
+              <li><a href="../login/login.html">Iniciar sesion</a></li>
             </ul>
-        
+          
         </div>
       </div>
     </header>
                     
     <main>
-
-      <form action="reservation.php" method="post">
-        <div class="elem-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
+      <hr class="hr">
+      <div class="linea"></div>
+      <div id="fyr">
+        <div class="contenedor">
+          <h2>Horarios de Visitas Guiadas</h2>
+          <ul class="ulcont">
+            <li><b>Lunes:</b> 9:00AM a 11:00PM Arqueologia</li>
+            <li><b>Martes:</b> 9:00AM a 11:00PM Arte</li>
+            <li><b>Miércoles:</b> 9:00AM a 11:00PM Historia</li>
+            <li><b>Jueves:</b> 9:00AM a 11:00PM Arte</li>
+            <li><b>Viernes:</b> 9:00AM a 11:00PM Arqueologia</li>
+            <li><b>Sábado:</b> 11:00AM a 9:00PM Historia</li>
+            <li><b>Domingo:</b> 11:00AM a 9:00PM Arte</li>
+          </ul>
         </div>
-        <div class="elem-group">
-          <label for="email">Your E-mail</label>
-          <input type="email" id="email" name="visitor_email" placeholder="E-mail" required>
-        </div>
-        <div class="elem-group">
-          <label for="phone">Your Phone</label>
-          <input type="tel" id="phone" name="visitor_phone" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-        </div>
-        <hr>
-        <div class="elem-group inlined">
-          <label for="adult">Adults</label>
-          <input type="number" id="adult" name="total_adults" placeholder="0" min="1" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="child">Children</label>
-          <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="checkin-date">Check-in Date</label>
-          <input type="date" id="checkin-date" name="checkin" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="checkout-date">Check-out Date</label>
-          <input type="date" id="checkout-date" name="checkout" required>
-        </div>
-        <div class="elem-group">
-          <label for="room-selection">Select Room Preference</label>
-          <select id="room-selection" name="room_preference" required>
-              <option value="">Choose a Room from the List</option>
-              <option value="connecting">Connecting</option>
-              <option value="adjoining">Adjoining</option>
-              <option value="adjacent">Adjacent</option>
-          </select>
-        </div>
-        <hr>
-        <div class="elem-group">
-          <label for="message">Anything Else?</label>
-          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-        </div>
-        <button type="submit">Book The Rooms</button>
-      </form>
-
+        <form action="reservation.php" method="post">
+          <div class="elem-group">
+            <label for="name"><b>Nombre Completo</b></label>
+            <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="visitor_email" placeholder="ejemplo@mail.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="phone"><b>Telefono de Contacto</b></label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+          </div>
+          <hr>
+          <div class="elem-group inlined">
+            <label for="checkout-date"><b>Fecha</b></label>
+            <input type="date" id="checkout-date" name="checkout" required>
+          </div>
+          <hr>
+          <div class="elem-group">
+            <label for="message"><b>¿Algo que Debamos Saber?</b></label>
+            <textarea id="message" name="visitor_message" placeholder="Alergias, discapacidades, etc." required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>       
+      </div>
 
 
     </main>

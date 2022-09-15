@@ -47,30 +47,32 @@ footer{
     margin-left:2%;
 }
 
+
+
 nav{
     width: 100%;
 }
 
-#paginas{
+.nav ul{
     display: flex;
 	float: right;
     margin-top: 2.5vh;
-    margin-right:5%;
+    margin-right:25%;
     list-style-type: none;
 }
 
-#paginas li{
+.nav ul li{
     white-space: nowrap;
     font-size: 2vh;
     padding-left: 5%;
 }
 
-#paginas li a{
+.nav ul li a{
     text-decoration: none;
     color: black;
 }
 
-#paginas li a:hover{
+.nav ul li a:hover{
     color: white;
 }
 
@@ -93,7 +95,7 @@ nav{
 
 
 .horarios{
-    width: 20%;
+    width: 30%;
     padding-right: 25px;
 }
 
@@ -218,24 +220,40 @@ footer{
     }
 
     
+    
+    #encabezado{
+        display: block;
+    }
 
     .menu{
+        top: 6vh;
         display: flex;
+        margin-left: 39vh;
+        margin-right:5%;
+        list-style-type: none;
+        position: absolute;
     }
 
     .nav ul{
         display: none;
     }
     
-
+    .nav ul li{
+       padding-top: 1vh;
+       padding-bottom: 1vh; 
+    }
 
     .nav ul.show {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
         margin: 0;
         padding: 0;
     
         color: rgb(255, 255, 255);
-    
+        background-color: rgba(255, 255, 255, 0.226);
         height: 37vh;
         animation-name: slide;
         animation-duration: 0.5s;
@@ -247,7 +265,7 @@ footer{
           height: 0px;
         }
         to {
-          height: var(--nav-hg-altura);
+          height: 37vh;
         }
       }
 

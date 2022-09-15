@@ -67,14 +67,59 @@ footer{
     color: white;
 }
 
+#fyr{
+  display: flex;
+  padding: 5vh;
+}
 
+#fyr form{
+  width: 100%;
+  margin-left: 25px;
+}
 
+.ulcont{
+  list-style-type: none;
+  padding: 0;
+  color: #36393c;
+}
 
+.contenedor{
+  margin-right: 25px;
+  white-space: nowrap;
+}
+
+.linea{
+  height: 100%;
+  width: 22vh;
+  position:absolute;
+  background: linear-gradient(
+      180deg,
+      #f0c82f,
+      #eaa928,
+      #e37e1e,
+      rgb(255, 78, 78)
+    );
+  z-index: -1;
+  margin-left: 2.80%;
+}
+
+.hr{
+    background-color: #f0c82f;
+    border-color: #f0c82f;
+    margin: 0;
+    height: 1vh;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+b{
+  color: black;
+}
 
 main{
-    width: 500px;
-  margin: 0 auto;
-  padding: 50px;
+    width: 100%;
 }
 
 
@@ -83,7 +128,7 @@ main{
   }
   
   div.elem-group.inlined {
-    width: 49%;
+    width: 75%;
     display: inline-block;
     
     margin-left: 1%;
@@ -91,7 +136,6 @@ main{
   
   label {
     display: block;
-    font-family: 'Nanum Gothic';
     padding-bottom: 10px;
     font-size: 1.25em;
   }
@@ -101,7 +145,6 @@ main{
     border: 2px solid #777;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
     width: 100%;
     padding: 10px;
   }
@@ -121,13 +164,13 @@ main{
   
   button {
     height: 50px;
-    background: orange;
+    background-color: #e37e1e;
     border: none;
     color: white;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
     border-radius: 4px;
     cursor: pointer;
+    float: right;
   }
   
   button:hover {
