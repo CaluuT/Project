@@ -11,7 +11,7 @@
 
 body{
     background-color: rgb(233, 233, 233);
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap', sans-serif;                                    /*Color y fuentes para toda la pagina*/
 }
 
 
@@ -29,7 +29,7 @@ body{
     background-image: url("../img/banner.jpg");
     padding-bottom: 50vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;                                   /*Aca pusimos una imagen con CSS, sin mosaicos, full size y centrada a la pagina*/
     background-attachment: scroll;
     background-position: 50% 0;
     height: 50%;
@@ -43,7 +43,7 @@ body{
 	align-items: center;
 	color: rgb(0, 0, 0);
 	width: 100%;
-	top: 0;
+	top: 0;                                                 /*Creamos el contenedor y header con display flex logrando poner cosas en la misma linea, el header, en jerarquia, esta posicionado por sobre todas las cosas de la pagina*/
 	z-index: 2;
     background-color: rgba(255, 255, 255, 0.226);
     width: 100%;
@@ -53,7 +53,7 @@ body{
 
 .museo{
     height: 15vh;
-	width: auto;
+	width: auto;                               /*Logo con ciertas medidas y separado del margen*/
     margin-left:2%;
 }
 
@@ -64,7 +64,7 @@ body{
 */
 
 nav{
-    width: 100%;
+    width: 100%;                                                        /*Creamos un contenedor nav para poner un menu con enlaces a distintos apartados de la pagina*/
 }
 
 .nav ul{
@@ -76,8 +76,8 @@ nav{
 }
 
 .nav ul li{
-    white-space: nowrap;
-    font-size: 2vh;
+    white-space: nowrap;                                                /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/
+    font-size: 2vh;                                                     /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
     padding-left: 5%;
 }
 
@@ -91,7 +91,7 @@ nav{
 }
 
 .menu{
-    display: none;
+    display: none;                                  /*Hecho para la presentacion responsive de la pagina (display se activa solo cuando pasa de cierta medida en pixeles(jQuery))*/
 }
 
   /*
@@ -105,29 +105,29 @@ nav{
 */
 
 .titulo{
-    text-align: center;
+    text-align: center;                                      /*Subtitulo centrado y subrayado*/
     text-decoration: underline;
 }
 
 #planos{
     display: flex;
-    list-style-type: none;
+    list-style-type: none;                                          /*Lista con los mapas del museo en disposicion flex sin decoracion, con separacion al los margenes de la pagina*/
     padding: 0px;
     margin: 100px;
 }
 
 #planos li{
-    margin: 20px 10px 20px 10px;
+    margin: 20px 10px 20px 10px;                                  /*Separacion entre las imagenes y generacion de sombras*/
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 #planos li img{
-    width: 100%;
+    width: 100%;                                                      /*Tamaño de las imagenes*/
     height: auto;
 }
 
 #planos p{
-    margin: 10px;
+    margin: 10px;                                                     /*Separacion de los textos a las imagenes*/
 }
 
   /*
@@ -143,20 +143,19 @@ nav{
 footer{
     width: 100%;
     height: 20vh;
-    font-size: 1.2vh;
+    font-size: 1.2vh;                                             /*Contenedor footer con medidas, colores y alineacion al centro*/
     color: black;
     background-color: rgb(255, 78, 78);
     text-align: center;
   }
 
 #datos{
-    display: flex;
-   
+    display: flex;                                                    /*Contenedor div con display flex y alineacion al centro*/
   justify-content: center;
   }
   
-  .copyright{
-    color:white;
+  .copyright{ 
+    color:white;                                                      /*Color blanco al texto de copyright*/
   }
   
   .uldata{
@@ -169,8 +168,8 @@ footer{
   
   .uldata a{
     
-    text-decoration: none;
-    color: white;
+    text-decoration: none;                                            /*.uldata / .uldata a / .uldata h2*/
+    color: white;                                                  /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
     
   }
   
@@ -269,7 +268,7 @@ footer{
         /**/
         from {
           height: 0px;
-        }
+        }                       /*Animacion del menu de enlaces, hecho con JS*/
         to {
           height: 37vh;
         }

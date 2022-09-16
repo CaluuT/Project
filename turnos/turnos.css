@@ -12,7 +12,7 @@
 
 body{
     background-color: rgb(233, 233, 233);
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap', sans-serif;                  /*Color y fuentes para toda la pagina*/
 }
 
 /*
@@ -29,7 +29,7 @@ body{
     background-image: url("../img/banner.jpg");
     padding-bottom: 50vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;                                           /*Aca pusimos una imagen con CSS, sin mosaicos, full size y centrada a la pagina*/
     background-attachment: scroll;
     background-position: 50% 0;
     height: 50%;
@@ -41,7 +41,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	color: rgb(0, 0, 0);
-	width: 100%;
+	width: 100%;                                                  /*Creamos el contenedor y header con display flex logrando poner cosas en la misma linea, el header, en jerarquia, esta posicionado por sobre todas las cosas de la pagina*/
 	top: 0;
 	z-index: 2;
     background-color: rgba(255, 255, 255, 0.226);
@@ -51,7 +51,7 @@ body{
 
 .museo{ /*LOGO*/
     height: 15vh;
-	width: auto;
+	width: auto;                                                  /*Logo con ciertas medidas y separado del margen*/
     margin-left:2%;
 }
 
@@ -62,7 +62,7 @@ body{
 */
 
 nav{
-  width: 100%;
+  width: 100%;                          /*Creamos un contenedor nav para poner un menu con enlaces a distintos apartados de la pagina*/
 }
 
 .nav ul{
@@ -80,8 +80,8 @@ float: right;
 }
 
 .nav ul li a{
-  text-decoration: none;
-  color: black;
+  text-decoration: none;                                                                                             /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/                      
+  color: black;                                                                                   /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/                                                                                                     
 }
 
 .nav ul li a:hover{
@@ -89,7 +89,7 @@ float: right;
 }
 
 .menu{
-  display: none;
+  display: none;                                            /*Hecho para la presentacion responsive de la pagina (display se activa solo cuando pasa de cierta medida en pixeles(jQuery))*/
 }
 
 /*
@@ -103,27 +103,27 @@ float: right;
 */
 
 main{
-    width: 100%;
+    width: 100%;                            /*Ancho del cuerpo de la pagina*/
 }
 
 #fyr{
   display: flex;
-  padding: 5vh;
+  padding: 5vh;                             /*Contenedor de fechas y recorridos, con un display para poner cosas en la misma linea*/
 }
 
 #fyr form{
-  width: 100%;
+  width: 100%;                                        /*Medidas para el formulario*/
   margin-left: 25px;
 }
 
 .ulcont{
   list-style-type: none;
   padding: 0;
-  color: #36393c;
+  color: #36393c;                                                       /*Lista sin decoracion*/
 }
 
 .contenedor{
-  margin-right: 25px;
+  margin-right: 25px;                                                           /*Medidas para los horarios, todo en la misma linea(nowrap)*/
   white-space: nowrap;
 }
 
@@ -134,7 +134,7 @@ main{
   position:absolute;
   background: linear-gradient(
       180deg,
-      #f0c82f,
+      #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
       #eaa928,
       #e37e1e,
       rgb(255, 78, 78)
@@ -146,16 +146,16 @@ main{
 .hr{
     background-color: #f0c82f;
     border-color: #f0c82f;
-    margin: 0;
+    margin: 0;                                                          /*Linea debajo de la imagen/header de decoracion*/
     height: 1vh;
 }
 
 h2{
-  text-decoration: underline;
+  text-decoration: underline;                                     /*Subtitulo con subrayado*/
 }
 
 b{
-  color: black;
+  color: black;                                                       /*Se le pone el color negro al input BOLD para ponerle color a los textos de la lista*/
 }
 
 /*
@@ -166,42 +166,42 @@ b{
 
 
 div.elem-group {
-  margin: 20px 0;
+  margin: 20px 0;                                          /*Separacion entre inputs del formulario*/
 }
 
 div.elem-group.inlined {
   width: 75%;
-  display: inline-block;
+  display: inline-block;                                                                  /*Configuracion para contenedor de input fecha, con display en linea*/
   
   margin-left: 1%;
 }
 
 label {
-  display: block;
-  padding-bottom: 10px;
+  display: block; 
+  padding-bottom: 10px;                                                   /*Configuracion del rectangulo interior del input*/                                                                      
   font-size: 1.25em;
 }
 
-input, select, textarea {
+input, textarea {
   border-radius: 2px;
   border: 2px solid #777;
-  box-sizing: border-box;
+  box-sizing: border-box;                                                   /*Configuracion de inputs, el textarea es un input con mas lineas, con medidas*/
   font-size: 1.25em;
   width: 100%;
   padding: 10px;
 }
 
 div.elem-group.inlined input {
-  width: 95%;
+  width: 95%;                                                                   /*Configuracion para el input de la fecha*/
   display: inline-block;
 }
 
 textarea {
-  height: 250px;
+  height: 250px;                                                                  /*Altura del textarea*/
 }
 
 hr {
-  border: 1px dotted #ccc;
+  border: 1px dotted #ccc;                                                      /*Linea de decoracion punteada*/
 }
 
 button {
@@ -209,8 +209,8 @@ button {
   background-color: #e37e1e;
   border: none;
   color: white;
-  font-size: 1.25em;
-  border-radius: 4px;
+  font-size: 1.25em;                                                    /*button / button:hover*/
+  border-radius: 4px;                                                   /*Se configura un boton con colores, tamaños, abajo a la derecha del ultimo input, se ilumina cuando pasas con el mouse por arriba*/
   cursor: pointer;
   float: right;
 }
@@ -231,7 +231,7 @@ button:hover {
 
 footer{
   width: 100%;
-  height: 20vh;
+  height: 20vh;                                                   /*Contenedor footer con medidas, colores y alineacion al centro*/
   font-size: 1.2vh;
   color: black;
   background-color: rgb(255, 78, 78);
@@ -240,11 +240,11 @@ footer{
 
 #datos{
   display: flex;
-  justify-content: center;
+  justify-content: center;                                                  /*Contenedor div con display flex y alineacion al centro*/
 }
 
 .copyright{
-  color:white;
+  color:white;                                                          /*Color blanco al texto de copyright*/
 }
 
 .uldata{
@@ -255,70 +255,13 @@ footer{
 }
 
 .uldata a{
-  text-decoration: none;
-  color: white;
+  text-decoration: none;                                              /*.uldata / .uldata a / .uldata h2*/
+  color: white;                                                     /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
 }
 
 .uldata h2{
   color: black;
 }
-
-
-
-
-  div.elem-group {
-    margin: 20px 0;
-  }
-  
-  div.elem-group.inlined {
-    width: 75%;
-    display: inline-block;
-    
-    margin-left: 1%;
-  }
-  
-  label {
-    display: block;
-    padding-bottom: 10px;
-    font-size: 1.25em;
-  }
-  
-  input, select, textarea {
-    border-radius: 2px;
-    border: 2px solid #777;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-  
-  textarea {
-    height: 250px;
-  }
-  
-  hr {
-    border: 1px dotted #ccc;
-  }
-  
-  button {
-    height: 50px;
-    background-color: #e37e1e;
-    border: none;
-    color: white;
-    font-size: 1.25em;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  button:hover {
-    border: 2px solid black;
-  }
   
 /*
 	@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -407,7 +350,7 @@ footer{
         /**/
         from {
           height: 0px;
-        }
+        }                             /*Animacion del menu de enlaces, hecho con JS*/
         to {
           height: 37vh;
         }
