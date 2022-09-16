@@ -1,124 +1,145 @@
-/* #36393c #e37e1e #eaa928 #f0c82f #ffffff */
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 body{
     background-color: rgb(233, 233, 233);
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap', sans-serif;                        /*Color y fuentes para toda la pagina*/
 }
 
-
-
-footer{
-    font-size: 10px;
-    color: black;
-    background-color: #e37e1e;
-    width: 100%;
-    height: 20vh;
-}
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 .fondo{
     background-image: url("img/banner.jpg");
     padding-bottom: 50vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;                     /*Aca pusimos una imagen con CSS, sin mosaicos, full size y centrada a la pagina*/
     background-attachment: scroll;
-    background-position: 0 0;
+    background-position: 50% 0;
     height: 50%;
 }
-
 
 #encabezado{
     background-color: white;
     display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);                            
 	width: 100%;
-	top: 0;
+	top: 0;                                            /*Creamos el contenedor y header con display flex logrando poner cosas en la misma linea, el header, en jerarquia, esta posicionado por sobre todas las cosas de la pagina*/
 	z-index: 2;
     background-color: rgba(255, 255, 255, 0.226);
     width: 100%;
     height: auto;
 }
 
-
 .museo{
-    height: 15vh;
-	width: auto;
+    height: 15vh;       
+	width: auto;                                    /*Logo con ciertas medidas y separado del margen*/
     margin-left:2%;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL MENU
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
 nav{
-    width: 100%;
+    width: 100%;                    /*Creamos un contenedor nav para poner un menu con enlaces a distintos apartados de la pagina*/
 }
 
-#paginas{
+.nav ul{
     display: flex;
 	float: right;
-    margin-top: 2.5vh;
-    margin-right:5%;
+    margin-top: 2.5vh;              
+    margin-right:10vh;
     list-style-type: none;
 }
 
-#paginas li{
-    white-space: nowrap;
-    font-size: 2vh;
+.nav ul li{
+    white-space: nowrap;                /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/
+    font-size: 2vh;                    /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
     padding-left: 5%;
 }
 
-#paginas li a{
+.nav ul li a{
     text-decoration: none;
     color: black;
 }
 
-#paginas li a:hover{
+.nav ul li a:hover{
     color: white;
 }
 
 .menu{
-    display: none;
+    display: none;                      /*Hecho para la presentacion responsive de la pagina (display se activa solo cuando pasa de cierta medida en pixeles(jQuery))*/
 }
 
-
-
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
 #data-div{
     
     list-style-type: none;
     display: flex;
     background-color: #e37e1e;
-    color:  white;
+    color:  white;                                  /*Configuracion para la lista de informacion, con display flex, sin decoracion y alineado al centro*/
     margin: 0px;
     text-align: center;
 }
 
-
 .horarios{
-    width: 20%;
-    padding-right: 25px;
+    width: 30%;
+    padding-right: 25px;                                   /*Medidas*/
 }
 
 .informacion{
-    width: 80%;
+    width: 80%;                                             /*Medidas*/
 }
 
 .titulo{
     text-align: center;
+    margin-top: 5%;                                                 /*Titulo h2 centrado con subrayado, mas medidas*/
+    margin-bottom: 0;
+    text-decoration: underline;
 }
-
-
 
 #exp{
     display: flex;
     list-style-type: none;
-    padding: 0px;
-
+    padding: 0px;                                                       /*Configuracion de la lista de exhibiciones con display flex, centrado sin decoraciones, medidas personalizadas*/
+    text-align: center;
     margin: 100px;
-    
+    margin-top: 25px;
 }
 
 
 #exp p{
-    margin: 10px;
+    margin: 10px;                                                               /*Separando el texto de los bordes*/
 }
 
 
@@ -126,110 +147,74 @@ nav{
     margin: 40px 10px 40px 10px;
     
     background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);                                        /*Separacion entre las imagenes de exhibicion*/
+
+    width: 100%;
 }
 
 #exp li img{
-    width: 100%;
-    height: auto;
+    width: 100%;                
+    height: 80%;                                                                    /*Medidas para las imagenes*/
 }
 
 
 
 .boton{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 5%;                                                              /*Boton alineado al centro*/
 }
 
 .bot{
     background-color: #36393c;
     color: white;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto;                                                                 /*Se colocan medidas y color para hacer un recuadro al texto, asi creando un boton*/
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
     text-decoration: none;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
-<<<<<<< HEAD
 footer{
-=======
-.informacion{
-    width: 80%;
-}
-
-.titulo{
-    text-align: center;
-}
-
-.copyright{
-    color:white;
-}
-
-.uldata{
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-    color: white;
-}
-
-.uldata a{
-    text-decoration: none;
-    color: white;
-}
-
-.uldata h2{
-    color: black;
-}
-
-#exp{
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
-    margin: 100px;    
-}
-
-#exp li{
-    margin: 40px 10px 40px 10px;
-    
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-#exp li img{
->>>>>>> main
     width: 100%;
-    height: 20vh;
+    height: 20%;
     font-size: 1.2vh;
-    color: black;
-    background-color: #e37e1e;
+    color: black;                           /*Contenedor footer con medidas, colores y alineacion al centro*/
+    background-color: rgb(255, 78, 78);
     text-align: center;
 }
 
 #datos{
     display: flex;
-   
-  justify-content: center;
+  justify-content: center;                              /*Contenedor div con display flex y alineacion al centro*/
 }
 
 .copyright{
-    color:white;
+    color:white;                                   /*Color blanco al texto de copyright*/
 }
 
 .uldata{
     display: inline-block;
     list-style-type: none;
-    text-align: center;
+    text-align: center;                                                
     color: white;
     
 }
 
 .uldata a{
     
-    text-decoration: none;
-    color: white;
+    text-decoration: none;                                      /*.uldata / .uldata a / .uldata h2*/
+    color: white;                                              /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
     
 }
 
@@ -237,9 +222,31 @@ footer{
     color: black;
 }
 
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
 
+@media only screen and (max-width: 1100px){
+    
+    #exp{
+        display: block;
+        list-style-type: none;
+        padding: 0px;
+    
+        margin: 20px;
+        
+    }
 
-@media only screen and (max-width: 900px){
+    
+
+}
+@media only screen and (max-width: 600px){
 
 
 
@@ -264,24 +271,49 @@ footer{
     }
 
     
+    
+    #encabezado{
+        display: block;
+    }
 
     .menu{
+        top: 6vh;
         display: flex;
+        margin-left: 85%;
+        margin-right:5%;
+        list-style-type: none;
+        position: absolute;
     }
 
     .nav ul{
         display: none;
     }
     
+    .nav ul li{
+       padding-top: 1vh;
+       padding-bottom: 1vh; 
+    }
 
+    .nav ul li a{
+        font-weight: 500;
+        color:rgb(0, 0, 0);
+        
+     }
 
     .nav ul.show {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
         margin: 0;
         padding: 0;
     
+        padding-left: 5%;
+        padding-right: 5%;
+
         color: rgb(255, 255, 255);
-    
+        background-color: rgba(255, 255, 255, 0.416);
         height: 37vh;
         animation-name: slide;
         animation-duration: 0.5s;
@@ -291,9 +323,9 @@ footer{
         /**/
         from {
           height: 0px;
-        }
+        }                               /*Animacion del menu de enlaces, hecho con JS*/
         to {
-          height: var(--nav-hg-altura);
+          height: 37vh;
         }
       }
 
