@@ -77,7 +77,7 @@ nav{
 
 .nav ul li{
     white-space: nowrap;                                                /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/
-    font-size: 2vh;                                                     /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
+    font-size: 1.5rem;                                                      /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
     padding-left: 5%;
 }
 
@@ -124,7 +124,7 @@ nav{
 
 #planos li img{
     width: 100%;                                                      /*Tamaño de las imagenes*/
-    height: auto;
+    height: 80%;
 }
 
 #planos p{

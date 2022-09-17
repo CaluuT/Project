@@ -75,7 +75,7 @@ nav{
 
 .nav ul li{
     white-space: nowrap;                /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/
-    font-size: 2vh;                    /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
+    font-size: 1.5rem;                    /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
     padding-left: 5%;
 }
 
@@ -168,7 +168,7 @@ nav{
 
 
 #data-div{
-    
+    padding: 0;
     list-style-type: none;
     display: flex;
     background-color: #eaa928;
@@ -201,11 +201,13 @@ nav{
     text-align: center;
     margin: 100px;
     margin-top: 25px;
+    
 }
 
 
 #exp p{
-    margin: 10px;                                                               /*Separando el texto de los bordes*/
+    margin: 10px;
+    font-size: 1rem;                                                               /*Separando el texto de los bordes*/
 }
 
 
@@ -216,11 +218,13 @@ nav{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);                                        /*Separacion entre las imagenes de exhibicion*/
 
     width: 100%;
+    
+    
 }
 
 #exp li img{
     width: 100%;                
-    height: 80%;                                                                    /*Medidas para las imagenes*/
+    height: 85%;                                                                    /*Medidas para las imagenes*/
 }
 
 
