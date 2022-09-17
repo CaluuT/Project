@@ -190,6 +190,8 @@ nav{
     margin-top: 5%;                                                 /*Titulo h2 centrado con subrayado, mas medidas*/
     margin-bottom: 0;
     text-decoration: underline;
+    font-family: 'Julius Sans One', sans-serif;
+
 }
 
 #exp{
@@ -289,7 +291,6 @@ footer{
 .uldata h2{
     text-decoration: underline;
 }
-
 
 /*
 	@@@@@@@@@@@@@@@@@@@@@@@@@@@

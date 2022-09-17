@@ -231,36 +231,43 @@ button:hover {
 
 footer{
   width: 100%;
-  height: 20vh;                                                   /*Contenedor footer con medidas, colores y alineacion al centro*/
-  font-size: 1.2vh;
-  color: black;
+  height: 25%;
+  font-size: 1rem;
+  color: black;                           /*Contenedor footer con medidas, colores y alineacion al centro*/
   background-color: rgb(255, 78, 78);
   text-align: center;
 }
 
 #datos{
   display: flex;
-  justify-content: center;                                                  /*Contenedor div con display flex y alineacion al centro*/
+justify-content: center;                              /*Contenedor div con display flex y alineacion al centro*/
 }
 
 .copyright{
-  color:white;                                                          /*Color blanco al texto de copyright*/
+  color:white;                                   /*Color blanco al texto de copyright*/
+}
+
+.copyright2{
+  display: none;
 }
 
 .uldata{
   display: inline-block;
   list-style-type: none;
-  text-align: center;
+  text-align: center;                                                
   color: white;
+  
 }
 
 .uldata a{
-  text-decoration: none;                                              /*.uldata / .uldata a / .uldata h2*/
-  color: white;                                                     /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
+  
+  text-decoration: none;                                      /*.uldata / .uldata a / .uldata h2*/
+  color: white;                                              /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
+  
 }
 
 .uldata h2{
-  color: black;
+  text-decoration: underline;
 }
   
 /*
