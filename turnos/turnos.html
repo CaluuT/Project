@@ -67,28 +67,28 @@
           </ul>
         </div>
         <!---Formulario de inscripción-->
-        <form action="reservation.php" method="post">
+        <form action="registro.php" method="post">
           <div class="elem-group">
             <label for="name"><b>Nombre Completo</b></label>
-            <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
+            <input type="text" id="name" name="nombrecompleto" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
           </div>
           <div class="elem-group">
             <label for="email"><b>Email</b></label>
-            <input type="email" id="email" name="visitor_email" placeholder="ejemplo@mail.com" required>
+            <input type="email" id="email" name="email" placeholder="Ejemplo@mail.com" required>
           </div>
           <div class="elem-group">
             <label for="phone"><b>Telefono de Contacto</b></label>
-            <input type="tel" id="phone" name="visitor_phone" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            <input type="tel" id="phone" name="telefonodecontacto" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
           </div>
           <hr>
           <div class="elem-group inlined">
             <label for="checkout-date"><b>Fecha</b></label>
-            <input type="date" id="checkout-date" name="checkout" required>
+            <input type="date" id="checkout-date" name="fecha" required>
           </div>
           <hr>
           <div class="elem-group">
             <label for="message"><b>¿Algo que Debamos Saber?</b></label>
-            <textarea id="message" name="visitor_message" placeholder="Alergias, discapacidades, etc."></textarea>
+            <textarea id="message" name="mensajeimportante" placeholder="Alergias, discapacidades, etc."></textarea>
           </div>
           <button type="submit">Enviar</button>
         </form>       
