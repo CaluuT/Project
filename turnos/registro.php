@@ -16,7 +16,7 @@ echo "Nombre: $nombrecompleto, Email: $email, Telefono de Contacto: $telefonodec
         echo "$sql";
 
 
-
+        //################### Para que funcione hay que abrir los servidores de xampp ###################
 
 
 ?>

@@ -124,11 +124,16 @@ nav{
 
 #planos li img{
     width: 100%;                                                      /*Tamaño de las imagenes*/
-    height: 80%;
+    height: 100%;
 }
 
 #planos p{
     margin: 10px;                                                     /*Separacion de los textos a las imagenes*/
+}
+
+.recorridos{
+  text-align:center;
+
 }
 
   /*
