@@ -102,24 +102,88 @@ nav{
 	@@@@@@@@@@@@@@@@@@@@@@@@@@@
 */
 
+.linea1{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+    height: 100%;
+    width: 15%;
+    position:absolute;
+    background: linear-gradient(
+        180deg,
+        #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
+        #eaa928,
+        #e37e1e,
+        rgb(255, 78, 78)
+      );
+    z-index: -1;
+    margin-left: 80%;
+}
+
+.linea2{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+        height: 100%;
+        width: 15%;
+        position:absolute;
+        background: linear-gradient(
+            180deg,
+            #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
+            #eaa928,
+            #e37e1e,
+            rgb(255, 78, 78)
+          );
+        z-index: -1;
+        margin-left: 5%;
+}
+
+.linea3{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+    height: 80%;
+    width: 13%;
+    position:absolute;
+    background: linear-gradient(
+        180deg,
+        #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
+        #eaa928,
+        #e37e1e,
+        rgb(255, 78, 78)
+      );
+    z-index: -2;
+    margin-left: 78%;
+}
+
+.linea4{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+        height: 80%;
+        width: 13%;
+        position:absolute;
+        background: linear-gradient(
+            180deg,
+            #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
+            #eaa928,
+            #e37e1e,
+            rgb(255, 78, 78)
+          );
+        z-index: -2;
+        margin-left: 9%;
+}
+
+
 #data-div{
     
     list-style-type: none;
     display: flex;
-    background-color: #e37e1e;
+    background-color: #eaa928;
     color:  white;                                  /*Configuracion para la lista de informacion, con display flex, sin decoracion y alineado al centro*/
     margin: 0px;
     text-align: center;
+    justify-content: center;
 }
 
-.horarios{
-    width: 30%;
-    padding-right: 25px;                                   /*Medidas*/
+.data{
+    box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
 }
 
-.informacion{
-    width: 80%;                                             /*Medidas*/
-}
+
+
 
 .titulo{
     text-align: center;
@@ -187,8 +251,8 @@ nav{
 
 footer{
     width: 100%;
-    height: 20%;
-    font-size: 1.2vh;
+    height: 25%;
+    font-size: 1rem;
     color: black;                           /*Contenedor footer con medidas, colores y alineacion al centro*/
     background-color: rgb(255, 78, 78);
     text-align: center;
@@ -201,6 +265,10 @@ footer{
 
 .copyright{
     color:white;                                   /*Color blanco al texto de copyright*/
+}
+
+.copyright2{
+    display: none;
 }
 
 .uldata{
@@ -219,8 +287,9 @@ footer{
 }
 
 .uldata h2{
-    color: black;
+    text-decoration: underline;
 }
+
 
 /*
 	@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -243,6 +312,11 @@ footer{
         
     }
 
+    #exp li{
+        width: auto;
+    }
+    
+
     
 
 }
@@ -264,13 +338,48 @@ footer{
     footer{
         width: 100%;
         height: 20vh;
-        font-size: 1.1vh;
+        font-size: 0.7rem;
         color: black;
-        background-color: #e37e1e;
+        background-color: rgb(255, 78, 78);
         text-align: center;
     }
 
+    #datos{
+        display:block;
+        background-color: rgb(255, 78, 78);
+    }
+
+    .uldata{
+        margin: 0;
+        padding: 0;
+        padding-top: 2%;
+        display: block;
+    }
     
+    .copyright{
+     display: none;   
+    }
+
+    .copyright2{
+        display: block;
+        color:white;
+    }
+
+    #exp li{
+        width: auto;
+    }
+
+    #exp-1{
+        margin: 0;
+    }
+    
+    #exp-2{
+        margin: 0;
+    }
+    
+    #exp-3{
+        margin: 0;
+    }
     
     #encabezado{
         display: block;
