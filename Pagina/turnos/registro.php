@@ -14,9 +14,4 @@ echo "Nombre: $nombrecompleto, Email: $email, Telefono de Contacto: $telefonodec
         $sql = "INSERT INTO usuarios (nombrecompleto, email, telefonodecontacto, fecha, mensajeimportante) VALUES ('$nombrecompleto', '$email', '$telefonodecontacto', '$fecha', '$mensajeimportante')";
         $resul = mysqli_query($conectar , $sql) or trigger_error("Query Failed! SQL - Error: ".mysqli_error($conectar), E_USER_ERROR);
         echo "$sql";
-
-
-        //################### Para que funcione hay que abrir los servidores de xampp ###################
-
-
 ?>
