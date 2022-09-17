@@ -1,0 +1,364 @@
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+body{
+    background-color: rgb(233, 233, 233);
+    font-family: 'Asap', sans-serif;                  /*Color y fuentes para toda la pagina*/
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.fondo{
+    background-image: url("../img/banner.jpg");
+    padding-bottom: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;                                           /*Aca pusimos una imagen con CSS, sin mosaicos, full size y centrada a la pagina*/
+    background-attachment: scroll;
+    background-position: 50% 0;
+    height: 50%;
+}
+
+#encabezado{
+    background-color: white;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgb(0, 0, 0);
+	width: 100%;                                                  /*Creamos el contenedor y header con display flex logrando poner cosas en la misma linea, el header, en jerarquia, esta posicionado por sobre todas las cosas de la pagina*/
+	top: 0;
+	z-index: 2;
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 100%;
+    height: auto;
+}
+
+.museo{ /*LOGO*/
+    height: 15vh;
+	width: auto;                                                  /*Logo con ciertas medidas y separado del margen*/
+    margin-left:2%;
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL MENU
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+nav{
+  width: 100%;                          /*Creamos un contenedor nav para poner un menu con enlaces a distintos apartados de la pagina*/
+}
+
+.nav ul{
+  display: flex;
+float: right;
+  margin-top: 2.5vh;
+  margin-right:10vh;
+  list-style-type: none;
+}
+
+.nav ul li{
+  white-space: nowrap;
+  font-size: 1.5rem;  
+  padding-left: 5%;
+}
+
+.nav ul li a{
+  text-decoration: none;                                                                                             /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/                      
+  color: black;                                                                                   /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/                                                                                                     
+}
+
+.nav ul li a:hover{
+  color: white;
+}
+
+.menu{
+  display: none;                                            /*Hecho para la presentacion responsive de la pagina (display se activa solo cuando pasa de cierta medida en pixeles(jQuery))*/
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+main{
+    width: 100%;                            /*Ancho del cuerpo de la pagina*/
+}
+
+#fyr{
+  display: flex;
+  padding: 5vh;                             /*Contenedor de fechas y recorridos, con un display para poner cosas en la misma linea*/
+}
+
+#fyr form{
+  width: 100%;                                        /*Medidas para el formulario*/
+  margin-left: 25px;
+}
+
+.ulcont{
+  list-style-type: none;
+  padding: 0;
+  color: #36393c;                                                       /*Lista sin decoracion*/
+}
+
+.contenedor{
+  margin-right: 25px;                                                           /*Medidas para los horarios, todo en la misma linea(nowrap)*/
+  white-space: nowrap;
+}
+
+.linea{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+  height: 100%;
+  width: 22vh;
+  position:absolute;
+  background: linear-gradient(
+      180deg,
+      #f0c82f,                                                      /*rectangulo de decoracion en vertical, con un desvanecido, en jerarquia, esta por debajo de todo lo que hay en la pagina*/
+      #eaa928,
+      #e37e1e,
+      rgb(255, 78, 78)
+    );
+  z-index: -1;
+  margin-left: 2.80%;
+}
+
+.hr{
+    background-color: #f0c82f;
+    border-color: #f0c82f;
+    margin: 0;                                                          /*Linea debajo de la imagen/header de decoracion*/
+    height: 1vh;
+}
+
+h2{
+  text-decoration: underline;                                     /*Subtitulo con subrayado*/
+}
+
+b{
+  color: black;                                                       /*Se le pone el color negro al input BOLD para ponerle color a los textos de la lista*/
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL FORMULARIO DE INSCRIPCION
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+
+div.elem-group {
+  margin: 20px 0;                                          /*Separacion entre inputs del formulario*/
+}
+
+div.elem-group.inlined {
+  width: 75%;
+  display: inline-block;                                                                  /*Configuracion para contenedor de input fecha, con display en linea*/
+
+}
+
+label {
+  display: block; 
+  padding-bottom: 10px;                                                   /*Configuracion del rectangulo interior del input*/                                                                      
+  font-size: 1.25em;
+}
+
+input, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;                                                   /*Configuracion de inputs, el textarea es un input con mas lineas, con medidas*/
+  font-size: 1.25em;
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;                                                                   /*Configuracion para el input de la fecha*/
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;                                                                  /*Altura del textarea*/
+}
+
+hr {
+  border: 1px dotted #ccc;                                                      /*Linea de decoracion punteada*/
+}
+
+button {
+  height: 50px;
+  background-color: #e37e1e;
+  border: none;
+  color: white;
+  font-size: 1.25em;                                                    /*button / button:hover*/
+  border-radius: 4px;                                                   /*Se configura un boton con colores, tamaños, abajo a la derecha del ultimo input, se ilumina cuando pasas con el mouse por arriba*/
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer{
+  width: 100%;
+  height: 25%;
+  font-size: 1rem;
+  color: black;                           /*Contenedor footer con medidas, colores y alineacion al centro*/
+  background-color: rgb(255, 78, 78);
+  text-align: center;
+}
+
+#datos{
+  display: flex;
+justify-content: center;                              /*Contenedor div con display flex y alineacion al centro*/
+}
+
+.copyright{
+  color:white;                                   /*Color blanco al texto de copyright*/
+}
+
+.copyright2{
+  display: none;
+}
+
+.uldata{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;                                                
+  color: white;
+  
+}
+
+.uldata a{
+  
+  text-decoration: none;                                      /*.uldata / .uldata a / .uldata h2*/
+  color: white;                                              /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
+  
+}
+
+.uldata h2{
+  text-decoration: underline;
+}
+  
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+  @media only screen and (max-width: 600px){
+
+    #fyr{
+      display: inline-block;
+      padding: 7%;
+    }
+
+    #fyr form{
+      margin-left: 0;
+    }
+
+    button{
+     float: left;
+    }
+
+    footer{
+        width: 100%;
+        height: 20vh;
+        font-size: 1.1vh;
+        color: black;
+        background-color: #e37e1e;
+        text-align: center;
+    }
+
+    
+    
+    #encabezado{
+        display: block;
+    }
+
+    .menu{
+        top: 6vh;
+        display: flex;
+        margin-left: 85%;
+        margin-right:5%;
+        list-style-type: none;
+        position: absolute;
+    }
+
+    .nav ul{
+        display: none;
+    }
+    
+    .nav ul li{
+       padding-top: 1vh;
+       padding-bottom: 1vh; 
+    }
+
+    .nav ul li a{
+        font-weight: 500;
+        color:rgb(0, 0, 0);
+        
+     }
+
+    .nav ul.show {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
+        padding-left: 5%;
+        padding-right: 5%;
+
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.416);
+        height: 37vh;
+        animation-name: slide;
+        animation-duration: 0.5s;
+      }
+
+      @keyframes slide {
+        /**/
+        from {
+          height: 0px;
+        }                             /*Animacion del menu de enlaces, hecho con JS*/
+        to {
+          height: 37vh;
+        }
+      }
+    }

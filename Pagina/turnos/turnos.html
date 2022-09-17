@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+  <head>
+    <!---  Metadatos  -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Pagina de museo">
+    <meta name="keywords" content="Museo, Olimpiadas de programacion 2022">
+    <meta name="author" content="Fidel Barreiros, Luca Testa">
+    <title>Museo</title>
+
+    <!---  Importar archivos  -->
+    <link rel="stylesheet" href="turnos.css">
+    <link rel="stylesheet" href="../normalize.css">
+
+    <!--- Importar fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+    <!---Importar Javascript-->
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src ="../menu.js"></script>
+  </head>
+
+  <body> <!---Cuerpo de la página-->
+    <header> <!---Encabezado-->
+      <!---Imagen de fondo + logo-->
+      <div class="fondo">
+        <div id="encabezado">
+            <a href="../index.html"> 
+              <img class="museo"  src="../img/logomuseo.svg" alt="MUSEO">
+            </a>
+          <!---Menu-->
+          <div class="opciones"></div>
+            <a class="menu"> ●●● </a> 
+            <nav class="nav"> 
+              <ul id="paginas">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../turnos/turnos.html">Turnos</a></li>
+                <li><a href="../mapa/mapa.html">Mapa</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+                    
+    <main> <!---Sección principal-->
+      <!---Decoración-->
+      <hr class="hr">
+      <div class="linea"></div>
+      <!---Contenedor de inscripción-->
+      <div id="fyr">
+      <!---Horarios-->
+        <div class="contenedor">
+          <h2>Horarios de Visitas Guiadas</h2>
+          <ul class="ulcont">
+            <li><b>Lunes:</b> 9:00AM a 11:00PM Arqueologia</li>
+            <li><b>Martes:</b> 9:00AM a 11:00PM Arte</li>
+            <li><b>Miércoles:</b> 9:00AM a 11:00PM Historia</li>
+            <li><b>Jueves:</b> 9:00AM a 11:00PM Arte</li>
+            <li><b>Viernes:</b> 9:00AM a 11:00PM Arqueologia</li>
+            <li><b>Sábado:</b> 11:00AM a 9:00PM Historia</li>
+            <li><b>Domingo:</b> 11:00AM a 9:00PM Arte</li>
+          </ul>
+        </div>
+        <!---Formulario de inscripción-->
+        <form action="registro.php" method="post">
+          <div class="elem-group">
+            <label for="name"><b>Nombre Completo</b></label>
+            <input type="text" id="name" name="nombrecompleto" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="email" placeholder="Ejemplo@mail.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="phone"><b>Telefono de Contacto</b></label>
+            <input type="tel" id="phone" name="telefonodecontacto" placeholder="Telefono" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+          </div>
+          <hr>
+          <div class="elem-group inlined">
+            <label for="checkout-date"><b>Fecha</b></label>
+            <input type="date" id="checkout-date" name="fecha" required>
+          </div>
+          <hr>
+          <div class="elem-group">
+            <label for="message"><b>¿Algo que Debamos Saber?</b></label>
+            <textarea id="message" name="mensajeimportante" placeholder="Alergias, discapacidades, etc."></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>       
+      </div>
+    </main>
+     
+    <footer> <!---Pie de página-->
+      <div id="datos">
+        <!---Ubicacion-->
+        <ul class="uldata">
+          <li class="ubicacion">
+            <h2>Visitanos</h2>
+            <p>Sgto. Cabral 2772</p>
+            <p>provincia de Buenos Aires, Argentina</p>
+            <p>+54 (011) 1234-5678</p>
+            <p>example@gmail.gob.ar</p>    
+          </li>
+        </ul>
+        <ul class="uldata">
+          <li class="horarios">
+            <h2>Horarios</h2>
+            <p>De Lunes a Viernes de 9AM a 11PM.</p>
+            <p>Sabados y Domingos de 11AM a 9PM.</p>
+          </li>
+        </ul>
+        <!---Redes-->
+        <ul class="uldata">
+          <li class="redes">  
+            <h2>Seguinos en Nuestras Redes!</h2>          
+            <p href="#"><img src="../img/401-facebook.svg" alt="Facebook"></img></p>
+              
+            <p href="#"><img src="../img/403-instagram.svg" alt="Instagram"></img></p>
+              
+            <p href="#"><img src="../img/466-pinterest.svg" alt="Pinterest"></img></p>
+           </li>
+        </ul>
+        <br>
+        <small class="copyright2">Desarrollada por Luca Testa, Fidel Barreiros y Manuel Martinez. ©</small>
+      </div>
+      <!---Copyright-->
+      <small class="copyright">Desarrollada por Luca Testa, Fidel Barreiros y Manuel Martinez. ©</small>
+      
+    </footer>
+  </body> 
+</html>

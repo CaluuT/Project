@@ -1,0 +1,286 @@
+/* #36393c #e37e1e #eaa928 #f0c82f #ffffff (Paleta de colores)*/
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		BODY
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+body{
+    background-color: rgb(233, 233, 233);
+    font-family: 'Asap', sans-serif;                                    /*Color y fuentes para toda la pagina*/
+}
+
+
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		HEADER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.fondo{
+    background-image: url("../img/banner.jpg");
+    padding-bottom: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;                                   /*Aca pusimos una imagen con CSS, sin mosaicos, full size y centrada a la pagina*/
+    background-attachment: scroll;
+    background-position: 50% 0;
+    height: 50%;
+}
+
+
+#encabezado{
+    background-color: white;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgb(0, 0, 0);
+	width: 100%;
+	top: 0;                                                 /*Creamos el contenedor y header con display flex logrando poner cosas en la misma linea, el header, en jerarquia, esta posicionado por sobre todas las cosas de la pagina*/
+	z-index: 2;
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 100%;
+    height: auto;
+}
+
+
+.museo{
+    height: 15vh;
+	width: auto;                               /*Logo con ciertas medidas y separado del margen*/
+    margin-left:2%;
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	CLASES DEL MENU
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+nav{
+    width: 100%;                                                        /*Creamos un contenedor nav para poner un menu con enlaces a distintos apartados de la pagina*/
+}
+
+.nav ul{
+    display: flex;
+	float: right;
+    margin-top: 2.5vh;
+    margin-right:10vh;
+    list-style-type: none;
+}
+
+.nav ul li{
+    white-space: nowrap;                                                /*.nav ul / .nav ul li / .nav ul li a / .nav ul li a:hover*/
+    font-size: 1.5rem;                                                      /*Configuracion de la lista(menu de enlaces), siendo flex, posicionado a la derecha en el medio del header, todo en la misma linea(nowrap), sin decoraciones*/
+    padding-left: 5%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover{
+    color: white;
+}
+
+.menu{
+    display: none;                                  /*Hecho para la presentacion responsive de la pagina (display se activa solo cuando pasa de cierta medida en pixeles(jQuery))*/
+}
+
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MAIN
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.titulo{
+    text-align: center;                                      /*Subtitulo centrado y subrayado*/
+    text-decoration: underline;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#planos{
+    display: flex;
+    list-style-type: none;                                          /*Lista con los mapas del museo en disposicion flex sin decoracion, con separacion al los margenes de la pagina*/
+    padding: 0px;
+    margin: 30px 100px 30px 100px;
+}
+
+#planos li{
+    margin: 20px 10px 20px 10px;                                  /*Separacion entre las imagenes y generacion de sombras*/
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#planos li img{
+    width: 100%;                                                      /*Tamaño de las imagenes*/
+    height: 100%;
+}
+
+#planos p{
+    margin: 10px;                                                     /*Separacion de los textos a las imagenes*/
+}
+
+.recorridos{
+  text-align:center;
+
+}
+
+  /*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		FOOTER
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer{
+  width: 100%;
+  height: 25%;
+  font-size: 1rem;
+  color: black;                           /*Contenedor footer con medidas, colores y alineacion al centro*/
+  background-color: rgb(255, 78, 78);
+  text-align: center;
+}
+
+#datos{
+  display: flex;
+justify-content: center;                              /*Contenedor div con display flex y alineacion al centro*/
+}
+
+.copyright{
+  color:white;                                   /*Color blanco al texto de copyright*/
+}
+
+.copyright2{
+  display: none;
+}
+
+.uldata{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;                                                
+  color: white;
+  
+}
+
+.uldata a{
+  
+  text-decoration: none;                                      /*.uldata / .uldata a / .uldata h2*/
+  color: white;                                              /*Configuracion para lista de enlaces, en linea, sin decoracion, alineado al centro, se aplican colores*/
+  
+}
+
+.uldata h2{
+  text-decoration: underline;
+}
+
+/*
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		MEDIA QUERIES
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+  @media only screen and (max-width: 1000px){
+
+    #planos{
+        margin: 0;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){
+
+    #planos{
+        display: block;
+        list-style-type: none;
+        padding: 0px;
+    
+        margin: 20px;
+        
+    }
+
+    footer{
+        width: 100%;
+        height: 20vh;
+        font-size: 1.1vh;
+        color: black;
+        background-color: #e37e1e;
+        text-align: center;
+    }
+
+    
+    
+    #encabezado{
+        display: block;
+    }
+
+    .menu{
+        top: 6vh;
+        display: flex;
+        margin-left: 85%;
+        margin-right:5%;
+        list-style-type: none;
+        position: absolute;
+    }
+
+    .nav ul{
+        display: none;
+    }
+    
+    .nav ul li{
+       padding-top: 1vh;
+       padding-bottom: 1vh; 
+    }
+
+    .nav ul li a{
+        font-weight: 500;
+        color:rgb(0, 0, 0);
+        
+     }
+
+    .nav ul.show {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
+        padding-left: 5%;
+        padding-right: 5%;
+
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.416);
+        height: 37vh;
+        animation-name: slide;
+        animation-duration: 0.5s;
+      }
+
+      @keyframes slide {
+        /**/
+        from {
+          height: 0px;
+        }                       /*Animacion del menu de enlaces, hecho con JS*/
+        to {
+          height: 37vh;
+        }
+      }
+    }
