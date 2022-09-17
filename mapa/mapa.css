@@ -114,7 +114,7 @@ nav{
     display: flex;
     list-style-type: none;                                          /*Lista con los mapas del museo en disposicion flex sin decoracion, con separacion al los margenes de la pagina*/
     padding: 0px;
-    margin: 100px;
+    margin: 30px 100px 30px 100px;
 }
 
 #planos li{
